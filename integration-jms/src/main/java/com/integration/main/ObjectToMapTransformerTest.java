@@ -1,4 +1,4 @@
-package com.spijb.invoker;
+package com.integration.main;
 
 import javax.jms.JMSException;
 import javax.jms.Message;
@@ -13,8 +13,8 @@ import org.springframework.jms.core.MessageCreator;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.integration.domain.Department;
 import com.mockrunner.mock.jms.MockQueue;
-import com.spijb.domain.Department;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({ "classpath:spring-mockrunner.xml", "classpath:spring-int-jms.xml" })
@@ -38,6 +38,6 @@ public class ObjectToMapTransformerTest {
                 return objectMessage;
             }
         });
-        Thread.sleep(5000);
+        Thread.sleep(50000000l);
     }
 }

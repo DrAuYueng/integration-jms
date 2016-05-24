@@ -1,4 +1,4 @@
-package com.spijb.listener;
+package com.jms.listener;
 
 import javax.jms.JMSException;
 import javax.jms.MapMessage;

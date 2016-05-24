@@ -1,4 +1,4 @@
-package com.spijb.domain;
+package com.integration.domain;
 
 import java.io.Serializable;
 

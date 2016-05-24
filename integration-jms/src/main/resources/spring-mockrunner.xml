@@ -29,10 +29,10 @@
       	<property name="connectionFactory" ref="jmsQueueConnectionFactory"/>
       </bean>
      
-     <jms:listener-container  connection-factory="jmsQueueConnectionFactory" >
+ <!--     <jms:listener-container  connection-factory="jmsQueueConnectionFactory" >
 			<jms:listener destination="MOCKRUNNER-OUT-QUEUE" ref="mapMessageListener" method="onMessage" />
 	  </jms:listener-container>
 	  
-	  <bean id="mapMessageListener" class="com.spijb.listener.MapMessageListener" />
+	  <bean id="mapMessageListener" class="com.jms.listener.MapMessageListener" /> -->
       
 </beans>
